@@ -6,7 +6,7 @@ LABEL Maintainer="Mathew Beane <aepod23@gmail.com>" \
 # Install packages
 RUN apk --no-cache add php7 php7-fpm php7-mysqli php7-json  php7-zlib\
     php7-xml php7-phar php7-posix php7-mbstring php7-pdo \
-	git supervisor curl patch nodejs yarn npm  
+	openssh-client git supervisor curl patch nodejs yarn npm  
 RUN npm install --global gulp-cli
 	
 # Configure PHP-FPM
